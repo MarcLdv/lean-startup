@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full">
+    <main className="h-screen w-full relative">
       <section id="home" className="h-96 w-full bg-gray-600">
         <h1>Accueil</h1>
 
