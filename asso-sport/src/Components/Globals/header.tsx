@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {HomeIcon} from "@/Components/Globals/icons";
 
 const Header = () => {
 
@@ -8,6 +9,9 @@ const Header = () => {
       <div className="flex items-center gap-16">
         <div className="h-20 w-32 bg-gray-500 rounded-md"></div>
         <nav className="flex gap-8 text-black">
+          <Link href="#">
+            <HomeIcon className="stroke-black fill-none h-8 w-auto hover:scale-115 duration-500"/>
+          </Link>
           <Link href="#" className="hover:underline underline-offset-2"> Qui sommes-nous ? </Link>
           <Link href="#" className="hover:underline underline-offset-2"> Fonctionnement </Link>
           <Link href="#" className="hover:underline underline-offset-2"> Témoignages </Link>
