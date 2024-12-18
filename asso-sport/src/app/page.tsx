@@ -4,12 +4,21 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="h-screen w-full">
-      <section id="home" className="h-96 w-full bg-gray-600">
+      <section id="home" className="h-[93vh] w-full bg-gray-600 pt-44">
         <h1>Accueil</h1>
 
         <div className="flex justify-center">
-          <video src="https://www.youtube.com/watch?v=JF0a5aoEGsw" className="w-3/4" controls></video>
-          <div className="w-1/4 flex justify-center items-center">
+          <video width="900px" className="aspect-video" controls preload="none">
+            <source src="/path/to/video.mp4" type="video/mp4" />
+            <track
+              src="/#"
+              kind="subtitles"
+              srcLang="fr"
+              label="French"
+            />
+            Your browser does not support the video tag.
+          </video>          
+        <div className="w-1/4 flex flex-col justify-center items-center wrap raw">
             <h2>Lorem ipsum dolor sit amet.</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
             <Link href="#">Nous rejoindre</Link>
@@ -17,27 +26,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="presentation" className="h-96 w-full bg-gray-500">
+      <section id="presentation" className="h-96 w-full bg-gray-500 max-width-7xl mx-auto">
         <h2>Qui sommes nous ?</h2>
 
       </section>
 
-      <section id="about" className="h-96 w-full bg-gray-400">
+      <section id="about" className="h-96 w-full bg-gray-400 max-width-7xl mx-auto">
         <h2>Notre fonctionnement</h2>
 
       </section>
 
-      <section id="engagement" className="h-96 w-full bg-gray-300">
+      <section id="engagement" className="h-96 w-full bg-gray-300 max-width-7xl mx-auto">
         <h2>Engagements RSE et partenaires </h2>
 
       </section>
 
-      <section id="testimony" className="h-96 w-full bg-gray-200">
+      <section id="testimony" className="h-96 w-full bg-gray-200 max-width-7xl mx-auto">
         <h2>Témoignages</h2>
 
       </section>
 
-      <section id="contact" className="h-96 w-full">
+      <section id="contact" className="h-96 w-full max-width-7xl mx-auto">
         <h2>Contact</h2>
 
         <form>
