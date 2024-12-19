@@ -9,8 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        blue: {
+          default: "#2D8BBA",
+        },
+        yellow: {
+          default: "#FEFFB0",
+        },
+        star :{
+          default: "#F6BB06",
+        }
       },
     },
   },

@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import image_runners from "@/assets/images/image_runners.jpg"
 import image_mockup from "@/assets/images/image_runners.jpg"
-import {CheckIcon} from "@/Components/Globals/icons";
+import {CheckIcon, StarIcon} from "@/Components/Globals/icons";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full relative">
+    <main className="h-screen w-full relative overflow-x-hidden">
       <section id="home" className="pt-72 relative pb-16 flex justify-between gap-12 px-32">
         <Image src={image_runners} alt="Photo de personne qui cours" className="absolute top-0 left-0 w-full h-3/4 object-cover"/>
         <div className="absolute bg-black/40 top-0 left-0 w-full h-3/4"></div>
@@ -106,9 +106,47 @@ export default function Home() {
 
       </section>
 
-      <section id="testimony" className="h-96 w-full bg-gray-200 max-width-7xl mx-auto">
-        <h2>Témoignages</h2>
+      <section id="testimonies" className="w-full bg-blue-default max-width-7xl mx-auto px-5 py-20 flex-wrap">
+        <div className="flex-col items-center text-center w-full text-white pb-16">  
+          <h2 className="m-2 text-2xl"><strong>Reconnue</strong> par les entreprises</h2>
+          <h2 className="m-2 text-2xl"><strong>Adorée</strong> par les entreprises</h2>
+        </div>
 
+        <div className="flex justify-between items-stretch">
+          <article className="flex-col items-center justify-center w-1/4 mx-auto bg-white p-5 rounded-2xl text-center">
+            <div className="flex gap-2 justify-center m-3">
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+            </div>
+            <p className="m-2">En tant qu'entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons cette solution, nos collaborateurs bénéficient d'activités engageantes et d'un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique qui regroupe tout en un seul endroit."</p>
+            <p><strong>— Marie, Responsable RH</strong></p>
+          </article>
+          <article className="flex-col items-center justify-center w-1/4 mx-auto bg-white p-5 rounded-2xl text-center">
+            <div className="flex gap-2 justify-center m-3">
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+            </div>
+            <p className="m-2">"Nous cherchions une solution moderne pour dynamiser nos équipes tout en restant alignés avec nos valeurs d’entreprise. Cette application a complètement transformé notre approche. En plus de motiver les salariés avec des défis sportifs personnalisés, nous pouvons communiquer facilement nos engagements RSE et impliquer les collaborateurs dans des causes qui leur tiennent à cœur."</p>
+            <p><strong>— Antoine, Responsable RSE</strong></p>
+          </article>
+          <article className="flex-col items-center justify-center w-1/4 mx-auto bg-white p-5 rounded-2xl text-center">
+            <div className="flex gap-2 justify-center m-3">
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+              <StarIcon className="fill-star-default"/>
+            </div>
+            <p className="m-2">"Nous avions déjà un programme d'avantages, mais il manquait une vraie personnalisation. Avec cette solution, nous avons pu offrir des activités sur mesure à nos collaborateurs et centraliser tous les services dans une application intuitive. Le gain de temps pour les administrateurs est énorme, et les salariés sont ravis de voir des récompenses concrètes pour leurs efforts."</p>
+            <p><strong>— Camille, Élue CSE</strong></p>
+          </article>
+        </div>
       </section>
 
       <section id="contact" className="h-96 w-full max-width-7xl mx-auto">
