@@ -13,6 +13,12 @@ import image_groupe from "@/assets/images/image_groupe.png"
 import image_solidarite from "@/assets/images/image_solidarite.png"
 import image_team from "@/assets/images/image_team.png"
 import image_velo from "@/assets/images/image_velo.png"
+import image_auchan from "@/assets/images/image_auchan.png"
+import image_decathlon from "@/assets/images/image_decathlon.png"
+import image_castorama from "@/assets/images/image_castorama.png"
+import image_clubmed from "@/assets/images/image_clubmed.png"
+import image_dysneyland from "@/assets/images/image_dysneyland.png"
+import image_fnac from "@/assets/images/image_fnac.png"
 import {ArrowIcon, CheckIcon, CurvedArrowIconLeft, CurvedArrowIconRight, StarIcon} from "@/Components/Globals/icons";
 import useEmblaCarousel from 'embla-carousel-react'
 import React, { useCallback } from 'react'
@@ -249,47 +255,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pictures" className="max-w-7xl mx-auto py-20">
-        <div className="flex justify-center gap-3 my-2 flex-wrap items-center">
+      <section id="pictures" className="py-10">
+        <div className="my-5 max-w-7xl mx-auto px-4 ">
+          <h2 className="text-center text-2xl font-bold m-5">Ils nous font confiance !</h2>
+          <p className="text-center w-2/3 mx-auto m-10">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
+        </div>
+        <div className="flex justify-center gap-5 my-2 flex-wrap items-center">
             <Image src={image_groupe} alt="image groupe" className="w-1/4"/>
             <Image src={image_velo} alt="image velo" className="w-1/4"/>
             <Image src={image_team} alt="image team" className="w-1/4"/>
             <Image src={image_fit} alt="image fit" className="w-1/4"/>
             <Image src={image_solidarite} alt="image solidarite " className="w-1/4"/>
         </div>
-      </section>
 
-      <section id="clients" className="py-20">
-        <div className="max-w-7xl mx-auto my-5">
-          <h2 className="text-center text-2xl font-bold m-5">Ils nous font confiance !</h2>
-          <p className="text-center w-2/3 mx-auto">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
-        </div>
-          
-        <article className="bg-pink-default w-full p-10 my-5">
-          <div className="max-w-7xl mx-auto">
-
-            <h2 className="text-center">Nos entreprises clientes</h2>
-            {/* TODO : carrousel entreprises */}
+        <article className="bg-pink-default p-10 my-10">
+          <div className="max-w-7xl mx-auto px-4" >
+            <h2 className="text-center text-2xl">Nos entreprises clientes</h2>
 
           </div>
         </article>
-        <h3 className="text-center">Et pourquoi pas vous ?</h3>
+        <h3 className="text-center text-xl">Et pourquoi pas vous ?</h3>
       </section>
 
       <section id="contact" className="py-20 bg-green-default">
         <div className="max-width-7xl mx-auto">
           <h2 className="text-2xl text-center mb-5">Rejoignez-nous</h2>
-          <p className="text-center w-2/3 mx-auto"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
+          <p className="text-center w-2/3 mx-auto my-5"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
         </div> 
 
-        <form className="w-10/12 mx-auto grid grid-cols-2 gap-4 bg-white p-10 rounded-3xl shadow-xl">
-          <input type="text" placeholder="*Raison social" className="" />
-          <input type="text" placeholder="*Nom" className="" />
-          <input type="text" placeholder="*N° de téléphone" className="" />
-          <input type="email" placeholder="*Email" className="" />
-          <textarea placeholder="Message" className="col-span-2"></textarea>
-          <p>* Champs obligatoires<br/>En cliquant je confirme accepter le traitement de mes données personnelles conformément à la Politique de confidentialité.</p>
-          <button>Envoyer</button>
+        <form className="w-7/12 mx-auto bg-white p-10 px-20 rounded-3xl shadow-xl justify-center">
+        <div className="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="*Raison social" className="rounded-lg border-b border-green-default p-2" />
+          <input type="text" placeholder="*Nom" className="rounded-lg border-b border-green-default p-2" />
+          <input type="email" placeholder="*Email" className="rounded-lg border-b border-green-default p-2" />
+          <input type="text" placeholder="*N° de téléphone" className="rounded-lg border-b border-green-default p-2"  />
+          <textarea placeholder="Message" className="col-span-2 rounded-lg border-b border-green-default h-24 p-2"></textarea>
+        </div>
+          <p className="mt-4 text-sm">* Champs obligatoires</p>
+          <p className="text-sm">En cliquant je confirme accepter le traitement de mes données personnelles conformément à la  <a href="#">Politique de confidentialité.</a></p>
+          <div className="flex justify-end">
+            <button className="font-bold px-12 py-3 mt-5 bg-green-default shadow-md rounded-full">Envoyer</button>
+          </div>
         </form>
       </section>
     </main>
