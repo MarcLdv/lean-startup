@@ -242,8 +242,8 @@ export default function Home() {
       <section id="testimonies" className="w-full bg-blue-default py-20">
         <div className="maw-w-7xl mx-auto px-4">
           <div className="flex-col items-center text-center w-full text-white pb-16">
-            <h2 className="m-2 text-2xl">Reconnue par les entreprises</h2>
-            <h2 className="m-2 text-2xl">Adorée par les entreprises</h2>
+            <h2 className="m-2 text-4xl">Reconnue par les entreprises</h2>
+            <h2 className="m-2 text-4xl">Adorée par les entreprises</h2>
           </div>
 
           <div className="flex justify-between items-stretch flex-wrap">
@@ -255,7 +255,7 @@ export default function Home() {
                 <StarIcon className="fill-star-default"/>
                 <StarIcon className="fill-star-default"/>
               </div>
-              <p className="m-2">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons cette solution, nos collaborateurs bénéficient d&apos;activités engageantes et d&apos;un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique qui regroupe tout en un seul endroit.</p>
+              <p className="m-2 ">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons cette solution, nos collaborateurs bénéficient d&apos;activités engageantes et d&apos;un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique qui regroupe tout en un seul endroit.</p>
               <p><strong>— Marie, Responsable RH</strong></p>
             </article>
             <article className="flex-col items-center justify-center w-1/4 mx-auto bg-white p-5 rounded-2xl text-center">
@@ -286,8 +286,8 @@ export default function Home() {
 
       <section id="pictures" className="py-10">
         <div className="my-5 max-w-7xl mx-auto px-4 ">
-          <h2 className="text-center text-2xl font-bold m-5">Ils nous font confiance !</h2>
-          <p className="text-center w-2/3 mx-auto m-10">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
+          <h2 className="text-center text-4xl font-bold m-5">Ils nous font confiance !</h2>
+          <p className="text-center w-2/3 mx-auto m-10 text-xl">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
         </div>
         <div className="flex justify-center gap-5 my-2 flex-wrap items-center">
             <Image src={image_groupe} alt="image groupe" className="w-1/4"/>
@@ -296,32 +296,54 @@ export default function Home() {
             <Image src={image_fit} alt="image fit" className="w-1/4"/>
             <Image src={image_solidarite} alt="image solidarite " className="w-1/4"/>
         </div>
+      </section>
 
-        {/*<article className="bg-pink-default p-10 my-10">*/}
-        {/*  <div className="max-w-7xl mx-auto px-4">*/}
-        {/*    <h2 className="text-center text-2xl">Nos entreprises clientes</h2>*/}
-        {/*    <div className="embla w-1/2 mx-auto overflow-hidden py-8" ref={emblaRefClient}>*/}
-        {/*      <div className="embla__container flex gap-4">*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 1</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 2</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 3</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 1</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 2</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 3</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 1</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 2</div>*/}
-        {/*        <div className="embla__slide basis-1/4">Slide 3</div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</article>*/}
-        <h3 className="text-center text-xl">Et pourquoi pas vous ?</h3>
+      <section id="offers">
+        <div className=" bg-pink-default">
+          <div className="max-w-7xl mx-auto px-4 pt-10 pb-36 ">
+            <h2 className="text-center text-4xl my-4">Nos offre entreprise</h2>
+            <p className="text-center text-xl">Un abonnement unique pour engager vos salariés et soutenir des causes solidaires</p>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 pb-16">
+          <div className="flex justify-center gap-3">
+            <article className="w-1/5 shadow-xl px-3 py-8 rounded-lg -mt-16 bg-white">
+              <p className="text-lg">
+                0 - 50 salariés
+              </p>
+              <p className="font-extrabold text-2xl">2500 €</p>
+              <span className="text-sm">HT / an</span>
+            </article>
+            <article className="w-1/5 shadow-xl px-3 py-8 rounded-lg -mt-16 bg-white">
+              <p className="text-lg">
+                51 - 200 salariés
+              </p>
+              <p className="font-extrabold text-2xl">5000 €</p>
+              <span className="text-sm">HT / an</span>
+            </article>
+            <article className="w-1/5 shadow-xl px-3 py-8 rounded-lg -mt-16 bg-white">
+              <p className="text-lg">
+                201 - 500 salariés
+              </p>
+              <p className="font-extrabold text-2xl">8000 €</p>
+              <span className="text-sm">HT / an</span>
+            </article>
+            <article className="w-1/5 shadow-xl px-3 py-8 rounded-lg -mt-16 bg-white">
+              <p className="text-lg">
+                + 500 salariés
+              </p>
+              <p className="font-extrabold text-2xl">Sur devis</p>
+              <span className="text-sm">HT / an</span>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="contact" className="py-20 bg-green-default">
         <div className="max-width-7xl mx-auto">
-          <h2 className="text-2xl text-center mb-5">Rejoignez-nous</h2>
-          <p className="text-center w-2/3 mx-auto my-5"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
+          <h2 className="text-4xl text-center mb-5">Rejoignez-nous</h2>
+          <p className="text-center w-2/3 mx-auto my-5 text-xl"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
         </div> 
 
 
