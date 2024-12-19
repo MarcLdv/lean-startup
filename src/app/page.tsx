@@ -142,17 +142,15 @@ export default function Home() {
             <div className="xl:w-3/4">
               <h1 className="text-3xl md:text-5xl pb-3 md:pb-6">Transformez chaque kilomètre en un geste solidaire</h1>
               <p className="text-lg md:text-xl pb-4 md:pb-10">
-                Rejoignez l&apos;aventure Soli Fit <br/>
-                Fidélisez, et motivez vos collaborateurs tout en soutenant des causes qui comptent pour votre entreprise
-                et vos équipes !
+                Découvrez <strong className="font-bold">Soli Fit</strong> <br/>
+                L&apos;application qui unit vos collaborateurs au service des associations. Grâce à Soli Fit, motivez votre équipe autour d&apos;une cause, renforcez la cohésion interne, valorisez votre image d&apos;entreprise engagée, et contribuez à un impact positif pour la société.
               </p>
               <Link href="#"
                     className="px-8 py-4 block w-fit rounded-full text-lg md:text-xl bg-[#BDF0DF] text-black shadow-lg hover:shadow-xl hover:scale-105 duration-300">Nous
                 rejoindre</Link>
             </div>
-            <div className=" mt-8 lg:mt-10 xl:mt-36 2xl:mt-20">
-              <p className="text-white text-2xl mb-2"> Soutenez des associations qui comptent pour vous et vos
-                collaborateurs</p>
+            <div className=" mt-8 lg:mt-10 xl:mt-32 2xl:mt-16">
+              <p className="text-white text-2xl mb-2"> Soutenez les associations qui comptent pour vous et vos équipes.</p>
               <div
                 className="flex-1 flex justify-evenly gap-4 items-center py-12 bg-white shadow-xl w-full rounded-2xl overflow-hidden">
                 <Image src={logo_admr} alt="Logo association" className=" h-16 w-auto grayscale"/>
@@ -244,22 +242,22 @@ export default function Home() {
 
         <section className="bg-[#FEFFB0] py-16 relative">
           <div className=" clip-path-triangle bg-white absolute left-1/2 -translate-x-1/2 top-0 h-8 w-20"></div>
-          <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-20 lg:gap-40 ">
-            <div className="text-center mx-auto space-y-3 md:space-y-5">
-              <p className="font-bold text-3xl md:text-5xl">+500</p>
-              <p className="text-lg md:text-2xl">PME clientes et souriantes</p>
+          <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-20 lg:gap-28 ">
+            <div className="text-center mx-auto space-y-3">
+              <p className="font-bold text-xl md:text-3xl">+90%</p>
+              <p className="md:text-lg">Des collaborateurs ressentent une meilleure cohésion d&apos;équipe après un défi collectif</p>
             </div>
-            <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-3xl md:text-5xl">120000</p>
-              <p className="text-lg md:text-2xl">Dons récoltés grace au sport</p>
+            <div className="text-center mx-auto space-y-3 ">
+              <p className="font-bold text-xl md:text-3xl">15 activités</p>
+              <p className="md:text-lg">Sportives pour diversifier les défis collectifs</p>
             </div>
-            <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-3xl md:text-5xl">25</p>
-              <p className="text-lg md:text-2xl">Collaborateurs à votre écoute</p>
+            <div className="text-center mx-auto space-y-3 ">
+              <p className="font-bold text-xl md:text-3xl">30 min/jour</p>
+              <p className="md:text-lg ">De sport réduisent stress et boostent la productivité</p>
             </div>
-            <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-3xl md:text-5xl">12</p>
-              <p className="text-lg md:text-2xl">Années d’expérience</p>
+            <div className="text-center mx-auto space-y-3">
+              <p className="font-bold text-xl md:text-3xl">10 causes</p>
+              <p className="md:text-lg ">Solidaires majeures soutenues, de l&apos;environnement à l&apos;éducation</p>
             </div>
           </div>
         </section>
