@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: 'Impact';
+    src: url('/fonts/Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+    font-family: 'Calibri', sans-serif;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Impact', sans-serif;
+}
+
+.clip-path-triangle{
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+#contact::placeholder {
+  font-family: 'Impact', sans-serif; 
+  font-size: 1rem; 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #BDF0DF;
 }

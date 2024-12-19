@@ -9,8 +9,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        blue: {
+          default: "#2D8BBA",
+        },
+        yellow: {
+          default: "#FEFFB0",
+        },
+        star :{
+          default: "#F6BB06",
+        },
+        pink :{
+          default: "#FCD8EE",
+        },
+        green :{
+          default: "#BDF0DF",
+        }
+      },
+      fontFamily: {
+        impact: ["Impact"],
       },
     },
   },
