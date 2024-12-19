@@ -16,11 +16,9 @@ const Header = () => {
           <Link href="#" className="hover:underline underline-offset-2"> Engagement RSE et Partenaires </Link>
         </nav>
       </div>
-      <div className="flex items-center gap-4 text-lg">
-        <Link href="/#" className="px-8 py-4 bg-[#BDF0DF] text-black rounded-full font-semibold duration-500"> Nous rejoindre </Link>
-        <Link href="/" className=" ">
-          <PersonIcon className=" fill-none stroke-black w-6 h-auto"/>
-        </Link>
+      <div className="flex items-center gap-8 text-lg">
+        <Link href="/#" className="px-8 py-3 bg-[#BDF0DF] text-black rounded-full font-semibold duration-500 shadow-sm"> Nous rejoindre </Link>
+        <Link href="/#" className="px-8 py-3 bg-white text-black rounded-full font-semibold duration-500 shadow-sm"> Nous rejoindre </Link>
       </div>
     </header>
   );

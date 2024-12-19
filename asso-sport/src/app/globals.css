@@ -17,3 +17,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Impact', sans-serif;
 }
 
+.clip-path-triangle{
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}

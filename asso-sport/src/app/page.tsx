@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import image_runners from "@/assets/images/image_runners.jpg"
@@ -11,16 +13,28 @@ import image_groupe from "@/assets/images/image_groupe.png"
 import image_solidarite from "@/assets/images/image_solidarite.png"
 import image_team from "@/assets/images/image_team.png"
 import image_velo from "@/assets/images/image_velo.png"
-import {CheckIcon, CurvedArrowIconLeft, CurvedArrowIconRight, StarIcon} from "@/Components/Globals/icons";
+import {ArrowIcon, CheckIcon, CurvedArrowIconLeft, CurvedArrowIconRight, StarIcon} from "@/Components/Globals/icons";
+import useEmblaCarousel from 'embla-carousel-react'
+import React, { useCallback } from 'react'
 
 export default function Home() {
+  const [emblaRef, emblaApi] = useEmblaCarousel()
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
   return (
     <main className=" w-full relative overflow-hidden">
       <section id="home" className="pt-56 2xl:pt-72 relative pb-16 flex justify-between gap-12 px-32">
         <Image src={image_runners} alt="Photo de personne qui cours" className="absolute top-0 left-0 w-full h-5/6 object-cover"/>
         <div className="absolute bg-black/40 top-0 left-0 w-full h-5/6"></div>
-        <div className="relative text-white w-2/3 ">
-          <div>
+        <div className="relative text-white w-2/3">
+          <div className="w-3/4">
             <h1 className="text-5xl pb-6">Transformez chaque kilomètre en un geste solidaire</h1>
             <p className="text-xl pb-10">
               Comme + de 1000 TPE-PME dans votre région. <br/>
@@ -28,25 +42,75 @@ export default function Home() {
             </p>
             <Link href="#" className=" px-8 py-4 rounded-full text-xl bg-[#BDF0DF] text-black">Nous rejoindre</Link>
           </div>
-          <div className="flex gap-6 mt-36 2xl:mt-56">
-            <div className="flex-1 h-32 bg-[#D9D9D9] rounded-2xl"></div>
-            <div className="flex-1 h-32 bg-[#D9D9D9] rounded-2xl"></div>
-            <div className="flex-1 h-32 bg-[#D9D9D9] rounded-2xl"></div>
-            <div className="flex-1 h-32 bg-[#D9D9D9] rounded-2xl"></div>
+          <div className="flex gap-6 mt-36 2xl:mt-28">
+            <div className="flex-1 h-56 bg-[#D9D9D9] w-full rounded-2xl"></div>
           </div>
         </div>
-        <div className="pt-24">
-          <div className=" relative min-w-[370px] aspect-[0.8] rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+        <div className="pt-24 embla overflow-hidden w-[425px] h-fit relative" >
+          <div className="embla__viewport z-10 relative" ref={emblaRef}>
+            <div className="embla__container flex gap-6">
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">1/6 Renforcement de la cohésion d'équipe</h3>
+                <p className="text-lg">
+                  Participer à un défi collectif encourage la collaboration et la solidarité entre collègues, améliorant ainsi l'esprit d'équipe et la communication interne.
+                </p>
+              </div>
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">2/6 Amélioration de la qualité de vie au travail (QVT)</h3>
+                <p className="text-lg">
+                  En incitant les employés à bouger, le programme contribue à leur bien-être physique et mental, tout en dynamisant le cadre de travail.
+                </p>
+              </div>
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">3/6 Valorisation de l’image de l’entreprise</h3>
+                <p className="text-lg">
+                  Afficher un engagement envers des causes sociales et environnementales renforce l'attractivité de l'entreprise auprès des talents, partenaires et clients.
+                </p>
+              </div>
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">4/6 Avantages fiscaux potentiels</h3>
+                <p className="text-lg">
+                  es dons effectués aux associations partenaires peuvent permettre des déductions fiscales, tout en soutenant des causes importantes.
+                </p>
+              </div>
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">5/6 Outils de motivation pour les collaborateurs</h3>
+                <p className="text-lg">
+                  Offrir un programme ludique et engageant, avec des classements et des récompenses, booste la motivation et l’engagement des équipes.
+                </p>
+              </div>
+              <div
+                className="embla__slide basis-1 relative min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
+                <h3 className="text-3xl font-semibold">6/6 Contribution à la stratégie RSE</h3>
+                <p className="text-lg">
+                  Participer à un projet alliant sport et solidarité s'inscrit parfaitement dans les initiatives de responsabilité sociétale, renforçant ainsi l’impact positif de l’entreprise sur la société.
+                </p>
+              </div>
+            </div>
           </div>
+          <button className="embla__prev z-20 absolute bottom-10 left-10 aspect-square p-3 rounded-full border border-black" onClick={scrollPrev}>
+            <ArrowIcon className=" rotate-180 w-12 fill-none stroke-black"/>
+          </button>
+          <button className="embla__next z-20 absolute bottom-10 left-32 aspect-square p-3 rounded-full border border-black" onClick={scrollNext}>
+            <ArrowIcon className=" w-12 fill-none stroke-black"/>
+          </button>
         </div>
       </section>
 
       <section id="presentation" className="max-w-7xl mx-auto text-center pt-8 pb-20">
         <h2 className="text-4xl mb-12">Qui sommes nous ?</h2>
-        <p className="text-xl">Nous sommes une initiative innovante qui allie sport et solidarité pour transformer chaque effort en un impact concret. Notre mission : mobiliser les entreprises et leurs collaborateurs autour de défis sportifs collectifs, où chaque kilomètre parcouru contribue à soutenir des associations engagées dans des causes essentielles telles que l’environnement, la santé, l’éducation, et l’inclusion.</p>
+        <p className="text-xl">Nous sommes une initiative innovante qui allie sport et solidarité pour transformer
+          chaque effort en un impact concret. Notre mission : mobiliser les entreprises et leurs collaborateurs autour
+          de défis sportifs collectifs, où chaque kilomètre parcouru contribue à soutenir des associations engagées dans des causes essentielles telles que l’environnement, la santé, l’éducation, et l’inclusion.</p>
       </section>
 
-      <section className="bg-[#FEFFB0] py-16">
+      <section className="bg-[#FEFFB0] py-16 relative">
+        <div className=" clip-path-triangle bg-white absolute left-1/2 -translate-x-1/2 top-0 h-8 w-20"></div>
         <div className="max-w-7xl mx-auto flex justify-between gap-6 ">
           <div className="text-center space-y-5 max-w-[200px]">
             <p className="font-bold text-5xl">+500</p>
@@ -64,6 +128,18 @@ export default function Home() {
             <p className="font-bold text-5xl">12</p>
             <p className="text-2xl">Années d’expérience</p>
           </div>
+        </div>
+      </section>
+
+      <section className="px-4 max-w-7xl mx-auto grid grid-cols-2 items-center py-20">
+        <div className="bg-blue-default text-white p-8 rounded-2xl ">
+          <h2 className="text-4xl mb-6">Notre raison d'être</h2>
+          <p className="text-lg">
+            Nous croyons en une entreprise qui va au-delà de la simple performance économique. Notre mission est de créer un environnement où salariés et entreprises peuvent s’épanouir tout en ayant un impact positif sur la société et la planète. À travers notre engagement en Responsabilité Sociétale des Entreprises (RSE), nous mettons l’humain, l’environnement et la solidarité au cœur de nos actions. <br/>
+            En offrant des solutions qui favorisent le bien-être des salariés, soutiennent des causes d’intérêt général et réduisent l’empreinte environnementale, nous contribuons activement à bâtir un avenir durable et responsable pour tous.
+          </p>
+        </div>
+        <div className=" bg-[#]">
 
         </div>
       </section>
