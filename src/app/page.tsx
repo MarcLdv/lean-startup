@@ -235,8 +235,8 @@ export default function Home() {
         </section>
 
         <section id="presentation" className="max-w-7xl mx-auto px-4 text-center pb-20">
-          <h2 className="text-4xl mb-12">Qui sommes nous ?</h2>
-          <p className="text-xl">Nous sommes une initiative innovante qui allie sport et solidarité pour transformer
+          <h2 className="text-2xl md:text-4xl mb-12">Qui sommes nous ?</h2>
+          <p className="text-lg md:text-xl">Nous sommes une initiative innovante qui allie sport et solidarité pour transformer
             chaque effort en un impact concret. Notre mission : mobiliser les entreprises et leurs collaborateurs autour
             de défis sportifs collectifs, où chaque kilomètre parcouru contribue à soutenir des associations engagées
             dans des causes essentielles telles que l’environnement, la santé, l’éducation, et l’inclusion.</p>
@@ -266,7 +266,7 @@ export default function Home() {
 
         <section className="px-4 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center py-20">
           <div className="bg-blue-default text-white p-4 md:p-8 rounded-2xl text-center lg:text-left ">
-            <h2 className="text-4xl mb-6">Notre raison d&apos;être</h2>
+            <h2 className="text-2xl md:text-4xl mb-6">Notre raison d&apos;être</h2>
             <p className="md:text-lg">
               Nous croyons en une entreprise qui va au-delà de la simple performance économique. Notre mission est de
               créer un environnement où salariés et entreprises peuvent s’épanouir tout en ayant un impact positif sur
@@ -278,7 +278,7 @@ export default function Home() {
             </p>
           </div>
           <div className=" bg-blue-default/20 shadow-lg text-center p-4 md:p-8 space-y-6 mx-3 lg:mx-0 md:mx-6 rounded-b-xl lg:rounded-r-xl">
-            <h3 className="text-4xl mb-6">Labels et certifications</h3>
+            <h3 className="text-2xl md:text-4xl mb-6">Labels et certifications</h3>
             <p className="md:text-lg">La transparence et la qualité de nos engagements sont reconnues par des
               certifications et labels exigeants. Ces distinctions reflètent notre volonté d’intégrer des pratiques
               responsables et éthiques dans tout ce que nous faisons :</p>
@@ -291,7 +291,7 @@ export default function Home() {
         </section>
 
         <section id="about" className="max-w-7xl mx-auto px-4 pt-10 pb-20">
-          <h2 className="text-4xl mb-12 text-center">Comment ça marche</h2>
+          <h2 className="text-2xl md:text-4xl mb-12 text-center">Comment ça marche</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4">
             <div
               className="relative mx-auto shadow-xl aspect-square rounded-full flex flex-col p-8 justify-center items-center text-center text-xl font-semibold gap-2 w-56 md:w-64">
@@ -326,27 +326,27 @@ export default function Home() {
         <section id="application" className="bg-gradient-to-r from-[#FCD8EE] to-[#FEFFB0] py-20">
           <div className="max-w-7xl px-4 mx-auto flex flex-col lg:flex-row justify-between gap-20 ">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl mb-12">L&apos;application</h2>
+              <h2 className="text-3xl md:text-4xl mb-12">L&apos;application</h2>
               <ul className="space-y-4">
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="text-xl">Suivi et analyse des performances</p>
+                  <p className="md:text-xl">Suivi et analyse des performances</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="text-xl">Planification d&apos;itinéraires</p>
+                  <p className="md:text-xl">Planification d&apos;itinéraires</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="text-xl">Synchronisation d’applications externes</p>
+                  <p className="md:text-xl">Synchronisation d’applications externes</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="text-xl">Suivi des actualités</p>
+                  <p className="md:text-xl">Suivi des actualités</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="text-xl">Création de groupes collaboratifs</p>
+                  <p className="md:text-xl">Création de groupes collaboratifs</p>
                 </li>
               </ul>
             </div>
@@ -358,8 +358,8 @@ export default function Home() {
       <section id="testimonies" className="w-full bg-blue-default py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex-col items-center text-center w-full text-white pb-16">
-            <h2 className="m-2 text-4xl">Reconnue par les entreprises</h2>
-            <h2 className="m-2 text-4xl">Adorée par les entreprises</h2>
+            <h2 className="m-2 text-2xl md:text-4xl">Reconnue par les entreprises</h2>
+            <h2 className="m-2 text-2xl md:text-4xl">Adorée par les entreprises</h2>
           </div>
 
           <div className="flex justify-between items-stretch flex-wrap gap-8">
@@ -402,8 +402,8 @@ export default function Home() {
 
       <section id="pictures" className="py-10">
         <div className="my-5 max-w-7xl mx-auto px-4 ">
-          <h2 className="text-center text-4xl font-bold">Ils nous font confiance !</h2>
-          <p className="text-center md:w-2/3 py-6 mx-auto text-xl">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
+          <h2 className="text-center text-2xl md:text-4xl font-bold">Ils nous font confiance !</h2>
+          <p className="text-center md:w-2/3 py-6 mx-auto md:text-xl">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
         </div>
         <div className="flex justify-center max-w-7xl mx-auto px-4 gap-5 my-2 flex-wrap items-center">
             <Image src={image_groupe} alt="image groupe" className="flex-1 min-w-[300px]"/>
@@ -417,8 +417,8 @@ export default function Home() {
       <section id="offers">
         <div className=" bg-pink-default">
           <div className="max-w-7xl mx-auto px-4 pt-10 pb-24 ">
-            <h2 className="text-center text-4xl my-4">Nos offre entreprise</h2>
-            <p className="text-center text-xl">Un abonnement unique pour engager vos salariés et soutenir des causes solidaires</p>
+            <h2 className="text-center text-2xl md:text-4xl my-4">Nos offre entreprise</h2>
+            <p className="text-center md:text-xl">Un abonnement unique pour engager vos salariés et soutenir des causes solidaires</p>
           </div>
         </div>
 
@@ -456,8 +456,8 @@ export default function Home() {
 
       <section id="contact" className="py-10 md:py-20 bg-green-default px-4">
         <div className="max-width-7xl mx-auto">
-          <h2 className="text-4xl text-center mb-5">Rejoignez-nous</h2>
-          <p className="text-center w-2/3 mx-auto my-5 text-xl"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
+          <h2 className="text-2xl md:text-4xl text-center mb-5">Rejoignez-nous</h2>
+          <p className="text-center w-2/3 mx-auto my-5 text-lg md:text-xl"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
         </div> 
 
 
