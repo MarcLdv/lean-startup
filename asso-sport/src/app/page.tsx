@@ -6,6 +6,11 @@ import image_people_seat from "@/assets/images/image_people_seat.png"
 import image_notebook from "@/assets/images/image_notebook.png"
 import image_donation from "@/assets/images/image_donation.png"
 import image_hands from "@/assets/images/image_hands.png"
+import image_fit from "@/assets/images/image_fit.png"
+import image_groupe from "@/assets/images/image_groupe.png"
+import image_solidarite from "@/assets/images/image_solidarite.png"
+import image_team from "@/assets/images/image_team.png"
+import image_velo from "@/assets/images/image_velo.png"
 import {CheckIcon, CurvedArrowIconLeft, CurvedArrowIconRight, StarIcon} from "@/Components/Globals/icons";
 
 export default function Home() {
@@ -126,8 +131,8 @@ export default function Home() {
       <section id="testimonies" className="w-full bg-blue-default py-20">
         <div className="maw-w-7xl mx-auto px-4">
           <div className="flex-col items-center text-center w-full text-white pb-16">
-            <h2 className="m-2 text-2xl"><strong>Reconnue</strong> par les entreprises</h2>
-            <h2 className="m-2 text-2xl"><strong>Adorée</strong> par les entreprises</h2>
+            <h2 className="m-2 text-2xl">Reconnue par les entreprises</h2>
+            <h2 className="m-2 text-2xl">Adorée par les entreprises</h2>
           </div>
 
           <div className="flex justify-between items-stretch flex-wrap">
@@ -168,14 +173,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="h-96 w-full max-width-7xl mx-auto">
-        <h2>Contact</h2>
+      <section id="pictures" className="max-w-7xl mx-auto py-20">
+        <div className="flex justify-center gap-3 my-2 flex-wrap items-center">
+            <Image src={image_groupe} alt="image groupe" className="w-1/4"/>
+            <Image src={image_velo} alt="image velo" className="w-1/4"/>
+            <Image src={image_team} alt="image team" className="w-1/4"/>
+            <Image src={image_fit} alt="image fit" className="w-1/4"/>
+            <Image src={image_solidarite} alt="image solidarite " className="w-1/4"/>
+        </div>
+      </section>
 
-        <form>
-          <input type="text" placeholder="Nom" />
-          <input type="text" placeholder="Prénom" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+      <section id="clients" className="py-20">
+        <div className="max-w-7xl mx-auto my-5">
+          <h2 className="text-center text-2xl font-bold m-5">Ils nous font confiance !</h2>
+          <p className="text-center w-2/3 mx-auto">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
+        </div>
+          
+        <article className="bg-pink-default w-full p-10 my-5">
+          <div className="max-w-7xl mx-auto">
+
+            <h2 className="text-center">Nos entreprises clientes</h2>
+            {/* TODO : carrousel entreprises */}
+
+          </div>
+        </article>
+        <h3 className="text-center">Et pourquoi pas vous ?</h3>
+      </section>
+
+      <section id="contact" className="py-20 bg-green-default">
+        <div className="max-width-7xl mx-auto">
+          <h2 className="text-2xl text-center mb-5">Rejoignez-nous</h2>
+          <p className="text-center w-2/3 mx-auto"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
+        </div> 
+
+        <form className="w-10/12 mx-auto grid grid-cols-2 gap-4 bg-white p-10 rounded-3xl shadow-xl">
+          <input type="text" placeholder="*Raison social" className="" />
+          <input type="text" placeholder="*Nom" className="" />
+          <input type="text" placeholder="*N° de téléphone" className="" />
+          <input type="email" placeholder="*Email" className="" />
+          <textarea placeholder="Message" className="col-span-2"></textarea>
+          <p>* Champs obligatoires<br/>En cliquant je confirme accepter le traitement de mes données personnelles conformément à la Politique de confidentialité.</p>
           <button>Envoyer</button>
         </form>
       </section>

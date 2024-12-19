@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Impact';
+    src: url('/fonts/Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Calibri', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Impact', sans-serif;
+}
+

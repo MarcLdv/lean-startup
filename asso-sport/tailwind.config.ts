@@ -17,7 +17,16 @@ export default {
         },
         star :{
           default: "#F6BB06",
+        },
+        pink :{
+          default: "#FCD8EE",
+        },
+        green :{
+          default: "#BDF0DF",
         }
+      },
+      fontFamily: {
+        impact: ["Impact"],
       },
     },
   },
