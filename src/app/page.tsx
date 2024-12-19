@@ -140,14 +140,14 @@ export default function Home() {
           <div className="absolute bg-black/40 top-0 left-0 w-full h-1/2 lg:h-5/6"></div>
           <div className="relative text-white lg:w-2/3">
             <div className="xl:w-3/4">
-              <h1 className="text-5xl pb-3 md:pb-6">Transformez chaque kilomètre en un geste solidaire</h1>
-              <p className="text-xl pb-4 md:pb-10">
+              <h1 className="text-3xl md:text-5xl pb-3 md:pb-6">Transformez chaque kilomètre en un geste solidaire</h1>
+              <p className="text-lg md:text-xl pb-4 md:pb-10">
                 Rejoignez l&apos;aventure Soli Fit <br/>
                 Fidélisez, et motivez vos collaborateurs tout en soutenant des causes qui comptent pour votre entreprise
                 et vos équipes !
               </p>
               <Link href="#"
-                    className="px-8 py-4 block w-fit rounded-full text-xl bg-[#BDF0DF] text-black shadow-lg hover:shadow-xl hover:scale-105 duration-300">Nous
+                    className="px-8 py-4 block w-fit rounded-full text-lg md:text-xl bg-[#BDF0DF] text-black shadow-lg hover:shadow-xl hover:scale-105 duration-300">Nous
                 rejoindre</Link>
             </div>
             <div className=" mt-8 lg:mt-10 xl:mt-36 2xl:mt-20">
@@ -172,40 +172,40 @@ export default function Home() {
               <div className="embla__container flex gap-6">
                 <div
                   className="embla__slide basis-1 relative min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-3xl font-semibold">1/6 Renforcement de la cohésion d&apos;équipe</h3>
-                  <p className="text-lg">
+                  <h3 className="text-2xl md:text-3xl font-semibold">1/6 Renforcement de la cohésion d&apos;équipe</h3>
+                  <p className="md:text-lg">
                     Participer à un défi collectif encourage la collaboration et la solidarité entre collègues,
                     améliorant ainsi l&apos;esprit d&apos;équipe et la communication interne.
                   </p>
                 </div>
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-3xl font-semibold">2/6 Amélioration de la qualité de vie au travail (QVT)</h3>
-                  <p className="text-lg">
+                  <h3 className="text-2xl md:text-3xl font-semibold">2/6 Amélioration de la qualité de vie au travail (QVT)</h3>
+                  <p className="md:text-lg">
                     En incitant les employés à bouger, le programme contribue à leur bien-être physique et mental, tout
                     en dynamisant le cadre de travail.
                   </p>
                 </div>
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-3xl font-semibold">3/6 Valorisation de l’image de l’entreprise</h3>
-                  <p className="text-lg">
+                  <h3 className="text-2xl md:text-3xl font-semibold">3/6 Valorisation de l’image de l’entreprise</h3>
+                  <p className="md:text-lg">
                     Afficher un engagement envers des causes sociales et environnementales renforce l&apos;attractivité
                     de l&apos;entreprise auprès des talents, partenaires et clients.
                   </p>
                 </div>
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-3xl font-semibold">4/6 Avantages fiscaux potentiels</h3>
-                  <p className="text-lg">
+                  <h3 className="text-2xl md:text-3xl font-semibold">4/6 Avantages fiscaux potentiels</h3>
+                  <p className="md:text-lg">
                     es dons effectués aux associations partenaires peuvent permettre des déductions fiscales, tout en
                     soutenant des causes importantes.
                   </p>
                 </div>
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-3xl font-semibold">5/6 Outils de motivation pour les collaborateurs</h3>
-                  <p className="text-lg">
+                  <h3 className="text-2xl md:text-3xl font-semibold">5/6 Outils de motivation pour les collaborateurs</h3>
+                  <p className="md:text-lg">
                     Offrir un programme ludique et engageant, avec des classements et des récompenses, booste la
                     motivation et l’engagement des équipes.
                   </p>
@@ -213,7 +213,7 @@ export default function Home() {
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
                   <h3 className="text-3xl font-semibold">6/6 Contribution à la stratégie RSE</h3>
-                  <p className="text-lg">
+                  <p className="md:text-lg">
                     Participer à un projet alliant sport et solidarité s&apos;inscrit parfaitement dans les initiatives
                     de responsabilité sociétale, renforçant ainsi l’impact positif de l’entreprise sur la société.
                   </p>
@@ -229,7 +229,7 @@ export default function Home() {
               className="embla__next z-20 absolute bottom-10 left-10 aspect-square p-4 rounded-full border border-black"
               onClick={scrollNext}
             >
-              <ArrowIcon className=" w-16 fill-none stroke-black"/>
+              <ArrowIcon className=" w-12 md:w-16 fill-none stroke-black"/>
             </button>
           </div>
         </section>
@@ -246,20 +246,20 @@ export default function Home() {
           <div className=" clip-path-triangle bg-white absolute left-1/2 -translate-x-1/2 top-0 h-8 w-20"></div>
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-20 lg:gap-40 ">
             <div className="text-center mx-auto space-y-3 md:space-y-5">
-              <p className="font-bold text-5xl">+500</p>
-              <p className="text-2xl">PME clientes et souriantes</p>
+              <p className="font-bold text-3xl md:text-5xl">+500</p>
+              <p className="text-lg md:text-2xl">PME clientes et souriantes</p>
             </div>
             <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-5xl">120000</p>
-              <p className="text-2xl">Dons récoltés grace au sport</p>
+              <p className="font-bold text-3xl md:text-5xl">120000</p>
+              <p className="text-lg md:text-2xl">Dons récoltés grace au sport</p>
             </div>
             <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-5xl">25</p>
-              <p className="text-2xl">Collaborateurs à votre écoute</p>
+              <p className="font-bold text-3xl md:text-5xl">25</p>
+              <p className="text-lg md:text-2xl">Collaborateurs à votre écoute</p>
             </div>
             <div className="text-center mx-auto space-y-3 md:space-y-5 ">
-              <p className="font-bold text-5xl">12</p>
-              <p className="text-2xl">Années d’expérience</p>
+              <p className="font-bold text-3xl md:text-5xl">12</p>
+              <p className="text-lg md:text-2xl">Années d’expérience</p>
             </div>
           </div>
         </section>
