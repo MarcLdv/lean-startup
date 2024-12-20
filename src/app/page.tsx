@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import image_runners from "@/assets/images/image_runners.jpg"
+import image_runners from "@/assets/images/image_runners.png"
 import image_mockup from "@/assets/images/image_mockup.png"
 import image_people_seat from "@/assets/images/image_people_seat.png"
 import image_notebook from "@/assets/images/image_notebook.png"
@@ -17,13 +17,16 @@ import logo_gptw from "@/assets/images/logo_gptw.png"
 import logo_iso from "@/assets/images/logo_iso.png"
 import logo_bcorpo from "@/assets/images/logo_bcorpo.png"
 import logo_admr from "@/assets/images/logo_admr.png"
-import logo_ej from "@/assets/images/logo_ej.png"
+import logo_ej from "@/assets/images/logo_ej.svg"
 import logo_fedeentraide from "@/assets/images/logo_fedeentraide.png"
 import logo_fr_benevolat from "@/assets/images/logo_fr_benevolat.png"
 import logo_mh from "@/assets/images/logo_mh.png"
 import logo_rdc from "@/assets/images/logo_rdc.png"
-import logo_wwf from "@/assets/images/logo_wwf.png"
+import logo_wwf from "@/assets/images/logo_wwf.jpg"
 import logo_unicef from "@/assets/images/logo_unicef.png"
+import logo_instagram from "@/assets/images/logo_instagram.png"
+import logo_facebook from "@/assets/images/logo_facebook.png"
+import logo_twitter from "@/assets/images/logo_twitter.png"
 import {
   ArrowIcon,
   CheckIcon,
@@ -37,7 +40,7 @@ import React, {useCallback, useEffect, useState} from 'react'
 import logo from "@/assets/images/logo.png";
 
 export default function Home() {
-  const [emblaRef, emblaApi] = useEmblaCarousel()
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -63,6 +66,14 @@ export default function Home() {
     };
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (emblaApi) emblaApi.scrollNext();
+    }, 4000); 
+
+    return () => clearInterval(interval);
+  }, [emblaApi]);
+
   // const scrollPrev = useCallback(() => {
   //   if (emblaApi) emblaApi.scrollPrev()
   // }, [emblaApi])
@@ -77,7 +88,9 @@ export default function Home() {
         className="fixed top-4 md:top-6 left-4 md:left-6 right-4 md:right-6 bg-white rounded-2xl px-8 xl:px-12 py-2 shadow-lg z-50">
         <div className="hidden xl:flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <Image src={logo} alt="Logo SoliFit" className="h-24 w-auto object-contain"/>
+            <a href="">
+              <Image src={logo} alt="Logo SoliFit" className="h-24 w-auto object-contain"/>
+            </a>
             <nav className="flex gap-4 text-black text-lg">
               <Link href="#" className="hover:font-semibold duration-200 px-2"> Qui sommes-nous ? </Link>
               <div className="relative group">
@@ -94,13 +107,9 @@ export default function Home() {
             </nav>
           </div>
           <div className="flex items-center gap-4 text-lg">
-            <Link href="/#"
+            <Link href="#form-contact"
                   className="px-8 py-3 bg-[#BDF0DF] text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300"> Nous
               rejoindre </Link>
-            <Link href="/#"
-                  className="px-8 py-3 bg-white text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300">
-              Votre espace
-            </Link>
           </div>
         </div>
         <div className="block xl:hidden">
@@ -122,13 +131,9 @@ export default function Home() {
               <Link href="#" className="hover:font-semibold duration-200 px-2">
                 Engagement RSE et Partenaires
               </Link>
-              <Link href="/#"
+              <Link href="#form-contact"
                     className="px-8 py-3 bg-[#BDF0DF] text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300"> Nous
                 rejoindre </Link>
-              <Link href="/#"
-                    className="px-8 py-3 bg-white text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300">
-                Votre espace
-              </Link>
             </nav>
           </div>
         </div>
@@ -142,8 +147,8 @@ export default function Home() {
             <div className="xl:w-3/4">
               <h1 className="text-3xl md:text-5xl pb-3 md:pb-6">Transformez chaque kilomètre en un geste solidaire</h1>
               <p className="text-lg md:text-xl pb-4 md:pb-10">
-                Découvrez <strong className="font-bold">Soli Fit</strong> <br/>
-                L&apos;application qui unit vos collaborateurs au service des associations. Grâce à Soli Fit, motivez votre équipe autour d&apos;une cause, renforcez la cohésion interne, valorisez votre image d&apos;entreprise engagée, et contribuez à un impact positif pour la société.
+                Découvrez <strong className="font-bold">SoliFit</strong> <br/>
+                L&apos;application qui unit vos collaborateurs au service des associations. Grâce à <strong>SoliFit</strong>, motivez votre équipe autour d&apos;une cause, renforcez la cohésion interne, valorisez votre image d&apos;entreprise engagée, et contribuez à un impact positif pour la société.
               </p>
               <Link href="#"
                     className="px-8 py-4 block w-fit rounded-full text-lg md:text-xl bg-[#BDF0DF] text-black shadow-lg hover:shadow-xl hover:scale-105 duration-300">Nous
@@ -152,27 +157,27 @@ export default function Home() {
             <div className=" mt-8 lg:mt-10 xl:mt-32 2xl:mt-16">
               <p className="text-white text-2xl mb-2"> Soutenez les associations qui comptent pour vous et vos équipes.</p>
               <div
-                className="flex-1 flex justify-evenly gap-4 items-center py-8 bg-white shadow-xl w-full rounded-2xl overflow-hidden">
-                <Image src={logo_admr} alt="Logo association" className=" h-16 w-auto grayscale"/>
-                <Image src={logo_wwf} alt="Logo association" className="h-24 w-auto grayscale"/>
-                <Image src={logo_rdc} alt="Logo association" className="h-20 w-auto grayscale"/>
-                <Image src={logo_unicef} alt="Logo association" className="h-24 w-auto grayscale"/>
-                <Image src={logo_fedeentraide} alt="Logo association" className=" h-18 w-auto grayscale"/>
+                className="flex-1 flex justify-evenly gap-4 items-center py-8 bg-white shadow-xl w-full rounded-2xl overflow-hidden px-1">
+                <Image src={logo_admr} alt="Logo association" className=" h-14 w-auto grayscale"/>
+                <Image src={logo_wwf} alt="Logo association" className="h-20 w-auto grayscale"/>
+                <Image src={logo_rdc} alt="Logo association" className="h-16 w-auto grayscale"/>
+                <Image src={logo_unicef} alt="Logo association" className="h-8 w-auto grayscale"/>
+                <Image src={logo_fedeentraide} alt="Logo association" className=" h-14 w-auto grayscale"/>
                 <Image src={logo_ej} alt="Logo association" className=" h-14 w-auto grayscale"/>
-                <Image src={logo_fr_benevolat} alt="Logo association" className="h-18 w-auto grayscale"/>
+                <Image src={logo_fr_benevolat} alt="Logo association" className="h-10 w-auto grayscale"/>
                 <Image src={logo_mh} alt="Logo association" className="h-20 w-auto grayscale"/>
               </div>
             </div>
           </div>
           <div className=" pt-6 lg:pt-10 embla overflow-hidden max-w-full lg:max-w-[425px] mx-auto h-fit relative">
-            <p className="lg:text-white text-2xl font-semibold mb-3 px-4">Découvrez les avantages de Soli Fit pour votre entreprise : </p>
+            <p className="lg:text-white text-2xl font-semibold mb-3 px-4">Découvrez les avantages de SoliFit pour vo entreprise : </p>
             <div className="embla__viewport z-10 relative" ref={emblaRef}>
               <div className="embla__container flex gap-6">
                 <div
                   className="embla__slide basis-1 relative min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
                   <h3 className="text-2xl md:text-3xl font-semibold">1/6 Renforcement de la cohésion d&apos;équipe</h3>
                   <p className="md:text-lg">
-                    Participer à un défi collectif encourage la collaboration et la solidarité entre collègues,
+                    Participer à un défi collectif encourage la collaboration et la solidarité entre salariés,
                     améliorant ainsi l&apos;esprit d&apos;équipe et la communication interne.
                   </p>
                 </div>
@@ -180,7 +185,7 @@ export default function Home() {
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
                   <h3 className="text-2xl md:text-3xl font-semibold">2/6 Amélioration de la qualité de vie au travail (QVT)</h3>
                   <p className="md:text-lg">
-                    En incitant les employés à bouger, le programme contribue à leur bien-être physique et mental, tout
+                    En incitant vos salariés à faire du sport, notre solution contribue à leur bien-être physique et mental, tout
                     en dynamisant le cadre de travail.
                   </p>
                 </div>
@@ -196,7 +201,7 @@ export default function Home() {
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
                   <h3 className="text-2xl md:text-3xl font-semibold">4/6 Avantages fiscaux potentiels</h3>
                   <p className="md:text-lg">
-                    es dons effectués aux associations partenaires peuvent permettre des déductions fiscales, tout en
+                    Les dons effectués aux associations partenaires peuvent permettre des déductions fiscales, tout en
                     soutenant des causes importantes.
                   </p>
                 </div>
@@ -213,7 +218,7 @@ export default function Home() {
                   <h3 className="text-3xl font-semibold">6/6 Contribution à la stratégie RSE</h3>
                   <p className="md:text-lg">
                     Participer à un projet alliant sport et solidarité s&apos;inscrit parfaitement dans les initiatives
-                    de responsabilité sociétale, renforçant ainsi l&apos;impact positif de l&apos;entreprise sur la société.
+                    de responsabilité sociétale, renforçant l&apos;impact positif de l&apos;entreprise sur la société.
                   </p>
                 </div>
               </div>
@@ -316,7 +321,7 @@ export default function Home() {
               className="shadow-xl mx-auto aspect-square rounded-full flex flex-col p-8 justify-center items-center text-center mt-52 -ml-12 md:ml-0 md:mt-40 text-xl font-semibold gap-2 w-56 md:w-64">
               <p>Etape 4</p>
               <Image src={image_donation} alt="personne assise image" className="h-14 w-auto object-contain"/>
-              <p>Mobilisez vos équipes</p>
+              <p>Suivez votre participation</p>
             </div>
           </div>
         </section>
@@ -369,7 +374,7 @@ export default function Home() {
                 <StarIcon className="fill-star-default"/>
                 <StarIcon className="fill-star-default"/>
               </div>
-              <p className="m-2">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons Solifit, nos collaborateurs peuvent participer à des activités engageantes et à un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique et accessible.</p>
+              <p className="m-2">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons <strong>Solifit</strong>, nos collaborateurs peuvent participer à des activités engageantes et à un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique et accessible.</p>
               <p><strong>— Marie, Responsable RH</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
@@ -455,7 +460,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="py-10 md:py-16 bg-green-default px-4">
+      <section id="form-contact" className="py-10 md:py-16 bg-green-default px-4">
         <div className="max-width-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl text-center mb-5">Rejoignez-nous</h2>
           <p className="text-center w-2/3 mx-auto my-8 text-lg md:text-xl"><strong>Profitez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
@@ -481,6 +486,16 @@ export default function Home() {
           </form>
         </section>
       </main>
+      <footer className="bg-yellow-default text-center py-10 flex-col items-center">
+        <Image src={logo} alt="Logo SoliFit" className="h-20 w-auto object-contain mx-auto"/>
+        <p className="my-2 text-sm">Suivez notre actualité</p>
+        <input type="email" placeholder="Adresse email" className="px-3 py-2 rounded-3xl"/>
+        <div className="flex justify-center gap-4 my-4">
+            <Image src={logo_instagram} alt="Logo Instagram" className="h-8 w-auto"/>
+            <Image src={logo_facebook} alt="Logo Facebook" className="h-8 w-auto"/>
+            <Image src={logo_twitter} alt="Logo Twitter" className="h-8 w-auto"/>
+        </div>
+      </footer>
     </>
   );
 }
