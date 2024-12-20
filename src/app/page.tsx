@@ -249,7 +249,7 @@ export default function Home() {
             </div>
             <div className="text-center mx-auto space-y-3 ">
               <p className="font-bold text-xl md:text-3xl">15 sports</p>
-              <p className="md:text-lg">Reconnu par l'application pour représenter la majorité de vos activités sportives</p>
+              <p className="md:text-lg">Reconnu par l&apos;application pour représenter la majorité de vos activités sportives</p>
             </div>
             <div className="text-center mx-auto space-y-3 ">
               <p className="font-bold text-xl md:text-3xl">30 min/jour</p>
@@ -267,11 +267,11 @@ export default function Home() {
             <h2 className="text-2xl md:text-4xl mb-6">Notre raison d&apos;être</h2>
             <p className="md:text-lg">
             Nous croyons en une entreprise qui va au-delà de la simple performance économique.
-            Notre mission est de créer un environnement où salariés et entreprises peuvent s'épanouir 
+            Notre mission est de créer un environnement où salariés et entreprises peuvent s&apos;épanouir 
             tout en ayant un impact positif sur la société et la planète. <br/>
-            Grâce à notre engagement en Responsabilité Sociétale des Entreprises (RSE), nous plaçons l'humain, l'environnement et 
+            Grâce à notre engagement en Responsabilité Sociétale des Entreprises (RSE), nous plaçons l&apos;humain, l&apos;environnement et 
             la solidarité au cœur de nos actions. En offrant des solutions qui favorisent le bien-être des salariés,
-            soutiennent des causes d'intérêt général et réduisent l'empreinte environnementale, nous 
+            soutiennent des causes d&apos;intérêt général et réduisent l&apos;empreinte environnementale, nous 
             bâtissons un avenir durable et responsable.
             </p>
           </div>
@@ -340,7 +340,7 @@ export default function Home() {
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="md:text-xl">Création d'événements entre entreprises</p>
+                  <p className="md:text-xl">Création d&apos;événements entre entreprises</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
