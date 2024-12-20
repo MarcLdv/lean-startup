@@ -103,6 +103,9 @@ export default function Home() {
             <Link href="#form-contact"
                   className="px-8 py-3 bg-[#BDF0DF] text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300"> Nous
               rejoindre </Link>
+            <Link href="https://www.figma.com/proto/jAbRpKl1xYb3Hv8yQgAqOL/Untitled?node-id=24-1570&t=x2WSULYPQQ5l8S3s-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A497&show-proto-sidebar=1"
+                className="px-8 py-3 bg-[#BDF0DF] text-black rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 duration-300"> Notre
+            prototype </Link>
           </div>
         </div>
         <div className="block xl:hidden">
