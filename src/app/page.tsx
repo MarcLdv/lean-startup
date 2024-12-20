@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </header>
       <main className=" w-full relative overflow-hidden">
-        <section id="home" className="pt-32 md:pt-44 2xl:pt-72 relative pb-16 flex flex-col lg:flex-row justify-between gap-12 px-4 md:px-20 2xl:px-32">
+        <section id="home" className="pt-32 md:pt-44 2xl:pt-56 relative pb-16 flex flex-col lg:flex-row justify-between gap-12 px-4 md:px-20 2xl:px-32">
           <Image src={image_runners} alt="Photo de personne qui cours"
                  className="absolute top-0 left-0 w-full h-1/2 lg:h-5/6 object-cover"/>
           <div className="absolute bg-black/40 top-0 left-0 w-full h-1/2 lg:h-5/6"></div>
@@ -152,7 +152,7 @@ export default function Home() {
             <div className=" mt-8 lg:mt-10 xl:mt-32 2xl:mt-16">
               <p className="text-white text-2xl mb-2"> Soutenez les associations qui comptent pour vous et vos équipes.</p>
               <div
-                className="flex-1 flex justify-evenly gap-4 items-center py-12 bg-white shadow-xl w-full rounded-2xl overflow-hidden">
+                className="flex-1 flex justify-evenly gap-4 items-center py-8 bg-white shadow-xl w-full rounded-2xl overflow-hidden">
                 <Image src={logo_admr} alt="Logo association" className=" h-16 w-auto grayscale"/>
                 <Image src={logo_wwf} alt="Logo association" className="h-24 w-auto grayscale"/>
                 <Image src={logo_rdc} alt="Logo association" className="h-20 w-auto grayscale"/>
@@ -186,7 +186,7 @@ export default function Home() {
                 </div>
                 <div
                   className="embla__slide basis-1 relative  min-w-[350px] md:min-w-[425px] aspect-[0.8] p-10 space-y-8 rounded-2xl bg-gradient-to-b from-[#BDF0DF] to-[#FEFFB0]">
-                  <h3 className="text-2xl md:text-3xl font-semibold">3/6 Valorisation de l’image de l’entreprise</h3>
+                  <h3 className="text-2xl md:text-3xl font-semibold">3/6 Valorisation de l&apos;image de l&apos;entreprise</h3>
                   <p className="md:text-lg">
                     Afficher un engagement envers des causes sociales et environnementales renforce l&apos;attractivité
                     de l&apos;entreprise auprès des talents, partenaires et clients.
@@ -205,7 +205,7 @@ export default function Home() {
                   <h3 className="text-2xl md:text-3xl font-semibold">5/6 Outils de motivation pour les collaborateurs</h3>
                   <p className="md:text-lg">
                     Offrir un programme ludique et engageant, avec des classements et des récompenses, booste la
-                    motivation et l’engagement des équipes.
+                    motivation et l&apos;engagement des équipes.
                   </p>
                 </div>
                 <div
@@ -213,7 +213,7 @@ export default function Home() {
                   <h3 className="text-3xl font-semibold">6/6 Contribution à la stratégie RSE</h3>
                   <p className="md:text-lg">
                     Participer à un projet alliant sport et solidarité s&apos;inscrit parfaitement dans les initiatives
-                    de responsabilité sociétale, renforçant ainsi l’impact positif de l’entreprise sur la société.
+                    de responsabilité sociétale, renforçant ainsi l&apos;impact positif de l&apos;entreprise sur la société.
                   </p>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function Home() {
             {/*  <ArrowIcon className=" rotate-180 w-12 fill-none stroke-black"/>*/}
             {/*</button>*/}
             <button
-              className="embla__next z-20 absolute bottom-10 left-10 aspect-square p-4 rounded-full border border-black"
+              className="embla__next z-20 absolute bottom-10 left-10 aspect-square p-2 rounded-full border border-black"
               onClick={scrollNext}
             >
               <ArrowIcon className=" w-12 md:w-16 fill-none stroke-black"/>
@@ -237,19 +237,19 @@ export default function Home() {
           <p className="text-lg md:text-xl">Nous sommes une initiative innovante qui allie sport et solidarité pour transformer
             chaque effort en un impact concret. Notre mission : mobiliser les entreprises et leurs collaborateurs autour
             de défis sportifs collectifs, où chaque kilomètre parcouru contribue à soutenir des associations engagées
-            dans des causes essentielles telles que l’environnement, la santé, l’éducation, et l’inclusion.</p>
+            dans des causes essentielles telles que l&apos;environnement, la santé, l&apos;éducation, et l&apos;inclusion.</p>
         </section>
 
         <section className="bg-[#FEFFB0] py-16 relative">
           <div className=" clip-path-triangle bg-white absolute left-1/2 -translate-x-1/2 top-0 h-8 w-20"></div>
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-20 lg:gap-28 ">
             <div className="text-center mx-auto space-y-3">
-              <p className="font-bold text-xl md:text-3xl">+90%</p>
-              <p className="md:text-lg">Des collaborateurs ressentent une meilleure cohésion d&apos;équipe après un défi collectif</p>
+              <p className="font-bold text-xl md:text-3xl">95%</p>
+              <p className="md:text-lg">Des salariés ressentent une meilleure cohésion d&apos;équipe après un défi collectif</p>
             </div>
             <div className="text-center mx-auto space-y-3 ">
-              <p className="font-bold text-xl md:text-3xl">15 activités</p>
-              <p className="md:text-lg">Sportives pour diversifier les défis collectifs</p>
+              <p className="font-bold text-xl md:text-3xl">15 sports</p>
+              <p className="md:text-lg">Reconnu par l'application pour représenter la majorité de vos activités sportives</p>
             </div>
             <div className="text-center mx-auto space-y-3 ">
               <p className="font-bold text-xl md:text-3xl">30 min/jour</p>
@@ -266,19 +266,19 @@ export default function Home() {
           <div className="bg-blue-default text-white p-4 md:p-8 rounded-2xl text-center lg:text-left ">
             <h2 className="text-2xl md:text-4xl mb-6">Notre raison d&apos;être</h2>
             <p className="md:text-lg">
-              Nous croyons en une entreprise qui va au-delà de la simple performance économique. Notre mission est de
-              créer un environnement où salariés et entreprises peuvent s’épanouir tout en ayant un impact positif sur
-              la société et la planète. À travers notre engagement en Responsabilité Sociétale des Entreprises (RSE),
-              nous mettons l’humain, l’environnement et la solidarité au cœur de nos actions. <br/>
-              En offrant des solutions qui favorisent le bien-être des salariés, soutiennent des causes d’intérêt
-              général et réduisent l’empreinte environnementale, nous contribuons activement à bâtir un avenir durable
-              et responsable pour tous.
+            Nous croyons en une entreprise qui va au-delà de la simple performance économique.
+            Notre mission est de créer un environnement où salariés et entreprises peuvent s'épanouir 
+            tout en ayant un impact positif sur la société et la planète. <br/>
+            Grâce à notre engagement en Responsabilité Sociétale des Entreprises (RSE), nous plaçons l'humain, l'environnement et 
+            la solidarité au cœur de nos actions. En offrant des solutions qui favorisent le bien-être des salariés,
+            soutiennent des causes d'intérêt général et réduisent l'empreinte environnementale, nous 
+            bâtissons un avenir durable et responsable.
             </p>
           </div>
           <div className=" bg-blue-default/20 shadow-lg text-center p-4 md:p-8 space-y-6 mx-3 lg:mx-0 md:mx-6 rounded-b-xl lg:rounded-r-xl">
             <h3 className="text-2xl md:text-4xl mb-6">Labels et certifications</h3>
             <p className="md:text-lg">La transparence et la qualité de nos engagements sont reconnues par des
-              certifications et labels exigeants. Ces distinctions reflètent notre volonté d’intégrer des pratiques
+              certifications et labels exigeants. Ces distinctions reflètent notre volonté d&apos;intégrer des pratiques
               responsables et éthiques dans tout ce que nous faisons :</p>
             <div className="flex justify-center gap-3">
               <Image src={logo_bcorpo} alt="Logo B Corporation" className=""/>
@@ -288,7 +288,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="max-w-7xl mx-auto px-4 pt-10 pb-20">
+        <section id="about" className="max-w-7xl mx-auto px-4 pt-5 pb-20">
           <h2 className="text-2xl md:text-4xl mb-12 text-center">Comment ça marche</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4">
             <div
@@ -336,15 +336,15 @@ export default function Home() {
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="md:text-xl">Synchronisation d’applications externes</p>
+                  <p className="md:text-xl">Synchronisation d&apos;applications externes</p>
+                </li>
+                <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
+                  <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
+                  <p className="md:text-xl">Création d'événements entre entreprises</p>
                 </li>
                 <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
                   <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
                   <p className="md:text-xl">Suivi des actualités</p>
-                </li>
-                <li className='flex gap-3 items-center bg-white/40 px-4 w-full py-2 rounded-full'>
-                  <CheckIcon className="w-8 h-auto stroke-black fill-none"/>
-                  <p className="md:text-xl">Création de groupes collaboratifs</p>
                 </li>
               </ul>
             </div>
@@ -369,7 +369,7 @@ export default function Home() {
                 <StarIcon className="fill-star-default"/>
                 <StarIcon className="fill-star-default"/>
               </div>
-              <p className="m-2 ">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons cette solution, nos collaborateurs bénéficient d&apos;activités engageantes et d&apos;un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique qui regroupe tout en un seul endroit.</p>
+              <p className="m-2">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons Solifit, nos collaborateurs peuvent participer à des activités engageantes et à un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique et accessible.</p>
               <p><strong>— Marie, Responsable RH</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
@@ -380,7 +380,7 @@ export default function Home() {
                 <StarIcon className="fill-star-default"/>
                 <StarIcon className="fill-star-default"/>
               </div>
-              <p className="m-2">Nous cherchions une solution moderne pour dynamiser nos équipes tout en restant alignés avec nos valeurs d’entreprise. Cette application a complètement transformé notre approche. En plus de motiver les salariés avec des défis sportifs personnalisés, nous pouvons communiquer facilement nos engagements RSE et impliquer les collaborateurs dans des causes qui leur tiennent à cœur.</p>
+              <p className="m-2">Nous cherchions une solution moderne pour dynamiser nos équipes tout en restant alignés avec nos valeurs d&apos;entreprise. Cette application a complètement transformé notre approche. En plus de motiver les salariés avec des défis sportifs personnalisés, nous pouvons communiquer facilement nos engagements RSE et impliquer les collaborateurs dans des causes qui leur tiennent à cœur.</p>
               <p><strong>— Antoine, Responsable RSE</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
@@ -400,8 +400,11 @@ export default function Home() {
 
       <section id="pictures" className="py-10">
         <div className="my-5 max-w-7xl mx-auto px-4 ">
-          <h2 className="text-center text-2xl md:text-4xl font-bold">Ils nous font confiance !</h2>
-          <p className="text-center md:w-2/3 py-6 mx-auto md:text-xl">Découvrez les témoignages de nos clients satisfaits qui ont fait le choix d’unir bien-être au travail, engagement sportif et soutien à des causes solidaires. Grâce à notre solution, ces entreprises ont non seulement renforcé la cohésion et la motivation de leurs équipes, mais elles ont aussi contribué à des initiatives positives, en phase avec leurs valeurs.</p>
+          <h2 className="text-center text-2xl md:text-4xl font-bold">N&apos;hésitez plus !</h2>
+          <p className="text-center md:w-2/3 py-6 mx-auto md:text-xl">
+            Découvrez notre solution pour unir vos salariés et faire le choix d&apos;unir bien-être au travail, engagement sportif et soutien
+            à des causes solidaires. 
+          </p>
         </div>
         <div className="flex justify-center max-w-7xl mx-auto px-4 gap-5 my-2 flex-wrap items-center">
             <Image src={image_groupe} alt="image groupe" className="flex-1 min-w-[300px]"/>
@@ -414,13 +417,13 @@ export default function Home() {
 
       <section id="offers">
         <div className=" bg-pink-default">
-          <div className="max-w-7xl mx-auto px-4 pt-10 pb-24 ">
+          <div className="max-w-7xl mx-auto px-4 pt-10 pb-44 ">
             <h2 className="text-center text-2xl md:text-4xl my-4">Nos offre entreprise</h2>
             <p className="text-center md:text-xl">Un abonnement unique pour engager vos salariés et soutenir des causes solidaires</p>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 -mt-16">
+        <div className="max-w-7xl mx-auto px-4 pb-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 -mt-24">
           <article className="shadow-xl px-8 py-8 rounded-lg bg-white">
             <p className="text-lg">
               0 - 50 salariés
@@ -452,10 +455,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="py-10 md:py-20 bg-green-default px-4">
+      <section id="contact" className="py-10 md:py-16 bg-green-default px-4">
         <div className="max-width-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl text-center mb-5">Rejoignez-nous</h2>
-          <p className="text-center w-2/3 mx-auto my-5 text-lg md:text-xl"><strong>Profitiez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
+          <p className="text-center w-2/3 mx-auto my-8 text-lg md:text-xl"><strong>Profitez facilement de notre solution<br/>3,2,1 … Commençons !</strong></p>
         </div> 
 
 
@@ -467,7 +470,7 @@ export default function Home() {
               <input type="text" placeholder="*N° de téléphone"
                      className="rounded-lg border-b border-green-default p-2"/>
               <textarea placeholder="Message"
-                        className="sm:col-span-2 rounded-lg border-b border-green-default h-24 p-2"></textarea>
+                        className="sm:col-span-2 rounded-lg border-b border-green-default h-24 p-2 resize-none"></textarea>
             </div>
             <p className="mt-4 text-sm">* Champs obligatoires</p>
             <p className="text-sm">En cliquant je confirme accepter le traitement de mes données personnelles
