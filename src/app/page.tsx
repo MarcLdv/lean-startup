@@ -163,7 +163,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" pt-6 lg:pt-10 embla overflow-hidden max-w-full lg:max-w-[425px] mx-auto h-fit relative">
-            <p className="lg:text-white text-2xl font-semibold mb-3 px-4">Découvrez les avantages de SoliFit pour vo entreprise : </p>
+            <p className="lg:text-white text-2xl font-semibold mb-3 px-4">Découvrez les avantages de SoliFit pour votre entreprise : </p>
             <div className="embla__viewport z-10 relative" ref={emblaRef}>
               <div className="embla__container flex gap-6">
                 <div
@@ -352,7 +352,7 @@ export default function Home() {
       <section id="testimonies" className="w-full bg-blue-default py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex-col items-center text-center w-full text-white pb-16">
-            <h2 className="m-2 text-2xl md:text-4xl">Enviée par les entreprise</h2>
+            <h2 className="m-2 text-2xl md:text-4xl">Enviée par les entreprises</h2>
             <h2 className="m-2 text-2xl md:text-4xl">Recherchée par les salariés</h2>
           </div>
 
@@ -405,7 +405,7 @@ export default function Home() {
       <section id="offers">
         <div className=" bg-pink-default">
           <div className="max-w-7xl mx-auto px-4 pt-10 pb-44 ">
-            <h2 className="text-center text-2xl md:text-4xl my-4">Nos offre entreprise</h2>
+            <h2 className="text-center text-2xl md:text-4xl my-4">Nos offres entreprise</h2>
             <p className="text-center md:text-xl">Un abonnement unique pour engager vos salariés et soutenir des causes solidaires</p>
           </div>
         </div>
@@ -451,7 +451,7 @@ export default function Home() {
 
           <form className="max-w-3xl mx-auto bg-white p-10 md:px-20 rounded-3xl shadow-xl justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="*Raison social" className="rounded-lg border-b border-green-default p-2"/>
+              <input type="text" placeholder="*Raison sociale" className="rounded-lg border-b border-green-default p-2"/>
               <input type="text" placeholder="*Nom" className="rounded-lg border-b border-green-default p-2"/>
               <input type="email" placeholder="*Email" className="rounded-lg border-b border-green-default p-2"/>
               <input type="text" placeholder="*N° de téléphone"
