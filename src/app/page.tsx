@@ -371,7 +371,7 @@ export default function Home() {
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
               <div className="flex items-center justify-center">
                 <Image src={logo_entreprise} alt="Logo entreprise" className="h-8 w-auto object-contain me-2"/>
-                <p className="font-bold "> - Interview d'une entreprise</p>
+                <p className="font-bold "> - Interview d&apos;une entreprise</p>
               </div>
               <p className="m-2">Dans notre institut, nous encourageons régulièrement nos chercheurs à participer à des activités sportives pour maintenir un équilibre travail-vie personnelle. Nous collaborons aussi avec des associations locales pour des projets solidaires. Une plateforme liant ces initiatives pourrait vraiment renforcer notre engagement collectif et offrir une vision plus claire de nos efforts communs.</p>
               <p><strong>B-com (Institut de recherche technologique)</strong></p>
@@ -379,17 +379,17 @@ export default function Home() {
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
               <div className="flex items-center justify-center">
                 <Image src={logo_employe} alt="Logo employé" className="h-8 w-auto object-contain me-2"/>
-                <p className="font-bold"> - Interview d'un employé</p>
+                <p className="font-bold"> - Interview d&apos;un employé</p>
               </div>
-              <p className="m-2">Dans ma petite entreprise, il y a peu d'activités sportives organisées, mais nous avons parfois des initiatives locales pour soutenir des associations. Personnellement, j'aimerais que l'on propose plus d'activités pour renforcer les liens entre collègues. Un outil pour organiser tout cela serait vraiment utile.</p>
+              <p className="m-2">Dans ma petite entreprise, il y a peu d&apos;activités sportives organisées, mais nous avons parfois des initiatives locales pour soutenir des associations. Personnellement, j&apos;aimerais que l&apos;on propose plus d&apos;activités pour renforcer les liens entre collègues. Un outil pour organiser tout cela serait vraiment utile.</p>
               <p><strong>Tovatti (Boutique de prêt-à-porter pour femme)</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
             <div className="flex items-center justify-center">
               <Image src={logo_employe} alt="Logo employé" className="h-8 w-auto object-contain me-2"/>
-              <p className="font-bold"> - Interview d'un employé</p>
+              <p className="font-bold"> - Interview d&apos;un employé</p>
             </div>
-            <p className="m-2">Chez Brico Dépôt, il y a quelques initiatives pour faire du sport, comme des sessions organisées ponctuellement, mais ce n'est pas très fréquent. Par contre, nous participons souvent à des collectes pour des associations. Je trouve qu'une plateforme pour tout regrouper et rendre cela plus accessible serait une excellente idée.</p>
+            <p className="m-2">Chez Brico Dépôt, il y a quelques initiatives pour faire du sport, comme des sessions organisées ponctuellement, mais ce n&apos;est pas très fréquent. Par contre, nous participons souvent à des collectes pour des associations. Je trouve qu&apos;une plateforme pour tout regrouper et rendre cela plus accessible serait une excellente idée.</p>
               <p><strong>Brico Dépôt (Commerce de vente d’outils de bricolage)</strong></p>
             </article>
             </div>
