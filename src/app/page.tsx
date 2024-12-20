@@ -16,14 +16,6 @@ import image_velo from "@/assets/images/image_velo.png"
 import logo_gptw from "@/assets/images/logo_gptw.png"
 import logo_iso from "@/assets/images/logo_iso.png"
 import logo_bcorpo from "@/assets/images/logo_bcorpo.png"
-import logo_admr from "@/assets/images/logo_admr.png"
-import logo_ej from "@/assets/images/logo_ej.svg"
-import logo_fedeentraide from "@/assets/images/logo_fedeentraide.png"
-import logo_fr_benevolat from "@/assets/images/logo_fr_benevolat.png"
-import logo_mh from "@/assets/images/logo_mh.png"
-import logo_rdc from "@/assets/images/logo_rdc.png"
-import logo_wwf from "@/assets/images/logo_wwf.jpg"
-import logo_unicef from "@/assets/images/logo_unicef.png"
 import logo_instagram from "@/assets/images/logo_instagram.png"
 import logo_facebook from "@/assets/images/logo_facebook.png"
 import logo_twitter from "@/assets/images/logo_twitter.png"
@@ -35,7 +27,6 @@ import {
   CurvedArrowIconLeft,
   CurvedArrowIconRight,
   MenuIcon,
-  StarIcon
 } from "@/Components/Globals/icons";
 import useEmblaCarousel from 'embla-carousel-react'
 import React, {useCallback, useEffect, useState} from 'react'
