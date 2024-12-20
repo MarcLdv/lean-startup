@@ -273,11 +273,9 @@ export default function Home() {
             bâtissons un avenir durable et responsable.
             </p>
           </div>
-          <div className=" bg-blue-default/20 shadow-lg text-center p-4 md:p-8 space-y-6 mx-3 lg:mx-0 md:mx-6 rounded-b-xl lg:rounded-r-xl">
+          <div className="bg-blue-default/20 shadow-lg text-center p-4 md:p-8 space-y-6 mx-3 lg:mx-0 md:mx-6 rounded-b-xl lg:rounded-r-xl">
             <h3 className="text-2xl md:text-4xl mb-6">Labels et certifications</h3>
-            <p className="md:text-lg">La transparence et la qualité de nos engagements sont reconnues par des
-              certifications et labels exigeants. Ces distinctions reflètent notre volonté d&apos;intégrer des pratiques
-              responsables et éthiques dans tout ce que nous faisons :</p>
+            <p className="md:text-lg">Nous aspirons à obtenir des certifications et labels reconnus pour refléter notre engagement envers des pratiques responsables et éthiques. Bien que nous ne les détenions pas encore, ces distinctions sont des objectifs que nous poursuivons activement :</p>
             <div className="flex justify-center gap-3">
               <Image src={logo_bcorpo} alt="Logo B Corporation" className=""/>
               <Image src={logo_gptw} alt="Logo B Corporation" className=""/>
