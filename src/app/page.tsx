@@ -27,6 +27,8 @@ import logo_unicef from "@/assets/images/logo_unicef.png"
 import logo_instagram from "@/assets/images/logo_instagram.png"
 import logo_facebook from "@/assets/images/logo_facebook.png"
 import logo_twitter from "@/assets/images/logo_twitter.png"
+import logo_entreprise from "@/assets/images/logo_entreprise.png"
+import logo_employe from "@/assets/images/logo_employe.png"
 import {
   ArrowIcon,
   CheckIcon,
@@ -156,7 +158,7 @@ export default function Home() {
             </div>
             <div className=" mt-8 lg:mt-10 xl:mt-32 2xl:mt-16">
               <p className="text-white text-2xl mb-2"> Soutenez les associations qui comptent pour vous et vos équipes.</p>
-              <div
+              {/* <div
                 className="flex-1 flex justify-evenly gap-4 items-center py-8 bg-white shadow-xl w-full rounded-2xl overflow-hidden px-1">
                 <Image src={logo_admr} alt="Logo association" className=" h-14 w-auto grayscale"/>
                 <Image src={logo_wwf} alt="Logo association" className="h-20 w-auto grayscale"/>
@@ -166,7 +168,7 @@ export default function Home() {
                 <Image src={logo_ej} alt="Logo association" className=" h-14 w-auto grayscale"/>
                 <Image src={logo_fr_benevolat} alt="Logo association" className="h-10 w-auto grayscale"/>
                 <Image src={logo_mh} alt="Logo association" className="h-20 w-auto grayscale"/>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className=" pt-6 lg:pt-10 embla overflow-hidden max-w-full lg:max-w-[425px] mx-auto h-fit relative">
@@ -361,46 +363,37 @@ export default function Home() {
       <section id="testimonies" className="w-full bg-blue-default py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex-col items-center text-center w-full text-white pb-16">
-            <h2 className="m-2 text-2xl md:text-4xl">Reconnue par les entreprises</h2>
-            <h2 className="m-2 text-2xl md:text-4xl">Adorée par les entreprises</h2>
+            <h2 className="m-2 text-2xl md:text-4xl">Enviée par les entreprise</h2>
+            <h2 className="m-2 text-2xl md:text-4xl">Recherchée par les salariés</h2>
           </div>
 
           <div className="flex justify-between items-stretch flex-wrap gap-8">
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
-              <div className="flex gap-2 justify-center m-3">
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
+              <div className="flex items-center justify-center">
+                <Image src={logo_entreprise} alt="Logo entreprise" className="h-8 w-auto object-contain me-2"/>
+                <p className="font-bold "> - Interview d'une entreprise</p>
               </div>
-              <p className="m-2">En tant qu&apos;entreprise, nous avions du mal à motiver nos équipes avec les outils traditionnels. Depuis que nous utilisons <strong>Solifit</strong>, nos collaborateurs peuvent participer à des activités engageantes et à un suivi clair de leurs performances. Côté entreprise, la gestion est simplifiée grâce à une plateforme ergonomique et accessible.</p>
-              <p><strong>— Marie, Responsable RH</strong></p>
+              <p className="m-2">Dans notre institut, nous encourageons régulièrement nos chercheurs à participer à des activités sportives pour maintenir un équilibre travail-vie personnelle. Nous collaborons aussi avec des associations locales pour des projets solidaires. Une plateforme liant ces initiatives pourrait vraiment renforcer notre engagement collectif et offrir une vision plus claire de nos efforts communs.</p>
+              <p><strong>B-com (Institut de recherche technologique)</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
-              <div className="flex gap-2 justify-center m-3">
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
+              <div className="flex items-center justify-center">
+                <Image src={logo_employe} alt="Logo employé" className="h-8 w-auto object-contain me-2"/>
+                <p className="font-bold"> - Interview d'un employé</p>
               </div>
-              <p className="m-2">Nous cherchions une solution moderne pour dynamiser nos équipes tout en restant alignés avec nos valeurs d&apos;entreprise. Cette application a complètement transformé notre approche. En plus de motiver les salariés avec des défis sportifs personnalisés, nous pouvons communiquer facilement nos engagements RSE et impliquer les collaborateurs dans des causes qui leur tiennent à cœur.</p>
-              <p><strong>— Antoine, Responsable RSE</strong></p>
+              <p className="m-2">Dans ma petite entreprise, il y a peu d'activités sportives organisées, mais nous avons parfois des initiatives locales pour soutenir des associations. Personnellement, j'aimerais que l'on propose plus d'activités pour renforcer les liens entre collègues. Un outil pour organiser tout cela serait vraiment utile.</p>
+              <p><strong>Tovatti (Boutique de prêt-à-porter pour femme)</strong></p>
             </article>
             <article className="flex-col items-center justify-center flex-1 min-w-[300px] mx-auto bg-white p-5 rounded-2xl text-center">
-              <div className="flex gap-2 justify-center m-3">
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-                <StarIcon className="fill-star-default"/>
-              </div>
-              <p className="m-2">Nous avions déjà un programme d&apos;avantages, mais il manquait une vraie personnalisation. Avec cette solution, nous avons pu offrir des activités sur mesure à nos collaborateurs et centraliser tous les services dans une application intuitive. Le gain de temps pour les administrateurs est énorme, et les salariés sont ravis de voir des récompenses concrètes pour leurs efforts.</p>
-              <p><strong>— Camille, Élue CSE</strong></p>
+            <div className="flex items-center justify-center">
+              <Image src={logo_employe} alt="Logo employé" className="h-8 w-auto object-contain me-2"/>
+              <p className="font-bold"> - Interview d'un employé</p>
+            </div>
+            <p className="m-2">Chez Brico Dépôt, il y a quelques initiatives pour faire du sport, comme des sessions organisées ponctuellement, mais ce n'est pas très fréquent. Par contre, nous participons souvent à des collectes pour des associations. Je trouve qu'une plateforme pour tout regrouper et rendre cela plus accessible serait une excellente idée.</p>
+              <p><strong>Brico Dépôt (Commerce de vente d’outils de bricolage)</strong></p>
             </article>
+            </div>
           </div>
-        </div>
       </section>
 
       <section id="pictures" className="py-10">
